@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body{
+    background-color: #0a101a;
+}
+.container{
+    border: violet solid;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "fig1 movie movie movie movie fig2";
+}
+    
+.movie{
+    width: 100%;
+    border: 1px firebrick dotted;
+    grid-area: movie;
+}
+figcaption{
+    border: 1px springgreen dotted;
+    background-color: #0a103a;
+}
+.figcaption1{
+    grid-area: fig1;
+}
+.figcaption2{
+    grid-area: fig2; 
+}
+.select-movie{
+    background-color: orangered;
+}
+.select-main-sub{
+    background-color: orange;
+}
+ @media screen and (max-width: 1100px){
+    .container{
+        grid-template-areas: "movie movie movie movie movie movie"
+        "fig1 fig1 fig1 fig2 fig2 fig2";
+    }
+    figcaption{
+    height: 35vh;
+    }
+}

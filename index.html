@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>SubApp</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src='main.js' defer></script>
+</head>
+
+<body>
+
+    <figure class="container">
+        <figcaption class="figcaption1">
+            <h1>Ar</h1>
+            <ol class="chapter-lang1 chapter"></ol>
+        </figcaption>
+        <video controls class="movie">
+            <!-- <source src="./A.Prophet.2009.FRENCH.1080p.BluRay.H264.AAC-VXT.mp4" type="video/mp4"> -->
+
+            <track class="defaultTrack" kind="subtitles" label="en" srclang="en" default >
+            <track kind="subtitles" label="ar"  srclang="en">
+        </video>
+        <figcaption  class="figcaption2">
+            <h1>Fr</h1>
+            <ol class="chapter-lang2 chapter"></ol>
+        </figcaption>
+    </figure>
+
+    <div class="select-container">
+        <input type="file" name="select-movie" class="select-movie">
+        <input type="file" name="select-main-sub" class="select-main-sub">
+        <input type="file" name="select-chap1" class="select-chap1">
+        <input type="file" name="select-chap2" class="select-chap2">
+    </div>
+</body>
+
+</html>
